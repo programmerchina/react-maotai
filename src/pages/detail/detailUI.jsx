@@ -1,10 +1,9 @@
 import React from 'react'
 import './detail.scss'
-import { NavLink, Route, Router} from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
 //无状态组件，提供dom结构
 export default function(props){
-	
-	console.log(props)
+
 	return (
 		<div className="detail">
 		<header className="head">
@@ -31,12 +30,24 @@ export default function(props){
          
          <section className="body">
          
+          <div className="body_in">
+                <div className="banner">
+                      <ul className="banner_ul swiper-wrapper">
+                          <li className="swiper-slide">1</li>
+                          <li className="swiper-slide">2</li>
+                          <li className="swiper-slide">3</li>
+                          <li className="swiper-slide">4</li>
+                          <li className="swiper-slide">5</li>
+                      </ul>
+                      <div className="swiper-pagination fyq"></div>
+                </div>
+          </div>
          
          </section>
          
          
          
-         <foot className="foot">
+         <footer className="foot">
              <div className="foot_left">
                   <div>
                        <span className="iconfont icon-dianpu"></span>
@@ -56,7 +67,7 @@ export default function(props){
              <div className="foot_right">
                       立即预约
              </div>
-         </foot>
+         </footer>
          </div>
 	)
 	
